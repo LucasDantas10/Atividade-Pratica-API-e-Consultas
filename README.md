@@ -372,7 +372,7 @@ SELECT MIN(preco_unitario) AS peca_mais_barata FROM pecas;
 
 ### 5. Qual é o preço médio das peças, com duas casas decimais?
 ```sql
-SELECT ROUND(CAST(AVG(preco_unitario) AS NUMERIC), 2) AS preco_medio FROM pecas;
+SELECT ROUND(AVG(preco_unitario), 2) AS preco_medio FROM pecas;
 ```
 
 ### 6. Qual é o valor total em estoque só das peças da categoria eletrica?
